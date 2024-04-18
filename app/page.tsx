@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Terminal, PartyPopper } from "lucide-react";
+import { Terminal, PartyPopper, ArrowRight } from "lucide-react";
 
 import AuthenticationForm from "@/components/landing/authenticationForm";
 import { ModeToggle } from "@/components/modeToggle";
@@ -50,10 +50,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold flex items-center gap-2">
             Community{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+            <span className=" transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              <ArrowRight />
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
@@ -68,10 +68,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold flex items-center gap-2">
             My activity{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+              <ArrowRight />
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
@@ -86,10 +86,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold flex items-center gap-2">
             Feed{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+              <ArrowRight />
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
@@ -104,10 +104,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold flex items-center gap-2">
             Message{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+              <ArrowRight />
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
@@ -122,10 +122,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold flex items-center gap-2">
             Learn{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+              <ArrowRight />
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
