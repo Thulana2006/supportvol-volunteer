@@ -4,9 +4,10 @@ import React, { useState, useEffect } from "react";
 import { UserAuth } from "@/context/AuthContext";
 import { Button } from "../ui/button";
 import { FcGoogle } from "react-icons/fc";
-import { Loader2, LogIn, LogOut, Rocket } from "lucide-react";
+import { ExternalLink, Loader2, LogIn, LogOut, Rocket } from "lucide-react";
 import Link from "next/link";
 import { DropdownMenuItem } from "../ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 
 interface AuthenticationFormProps {
   isSignIn: boolean;
@@ -17,11 +18,12 @@ const AuthenticationForm: React.FC<AuthenticationFormProps> = ({ isSignIn, isDro
 
   const { user, googleSignIn, logOut } = UserAuth();
   const [loading, setLoading] = useState(true);
+  const [showGoto, setShowGoto] = useState(false);
 
   const handleSignIn = async () => {
     try {
       await googleSignIn();
-      window.location.href = "/community";
+      setShowGoto(true);
     } catch (error) {
       console.log(error);
     }
