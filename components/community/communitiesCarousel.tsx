@@ -26,12 +26,9 @@ const CommunityCarousel: React.FC<CommunityCarouselProps> = ({ uid }) => {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'uid': 'tkdMHp3fqxNWNd9n59SYEA0faEM2',
-      },   
-  
+        'uid': userid,
+      },
     };
-    
-    console.log(userid);
 
     try {
       const response = await fetch('https://support-vol.as.r.appspot.com/api/usr/extradetails', requestOptions);
