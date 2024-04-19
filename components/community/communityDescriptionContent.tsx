@@ -115,11 +115,11 @@ Join us today and be part of the solution! 🌍💚
                                     {
                                         badgeDetails.map((badge, index) => {
                                             return (
-                                            <div key={index} className="md:basis-1/2 flex flex-col w-full max-w-xs py-3 text-sm">
+                                            <div key={index} className="md:basis-1/2 flex flex-col w-full max-w-xs text-sm">
                                                 <span>
                                                     <Badge className={badge.color} variant="secondary">{badge.name}</Badge>
                                                 </span>
-                                                <span className="text-xs mt-3 px-1">
+                                                <span className="text-xs mt-3 px-1 mb-3">
                                                     {badge.description}
                                                 </span>
                                             </div>
