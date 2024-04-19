@@ -43,7 +43,7 @@ const badgeDetails = [
     {
         name: "Fundraising ",
         color: "bg-green-100",
-        description: "Support environmental conservation through fundraising events and initiatives. Whether it's organizing a charity run, hosting a benefit concert"
+        description: "Support environmental conservation through fundraising events and initiatives. Whether it&apos;s organizing a charity run, hosting a benefit concert"
     },
     {
         name: "Eco-Tourism",
@@ -98,7 +98,7 @@ const statDetails = [
 
 Our community is dedicated to protecting and preserving the natural world for future generations. We believe that every individual has a role to play in safeguarding our planet, and together, we can make a meaningful impact.
 
-Join us in our mission to promote environmental awareness, advocate for sustainable practices, and take action to address pressing environmental issues. Whether you're passionate about protecting endangered species, reducing plastic pollution, or combating climate change, there's a place for you in our community.
+Join us in our mission to promote environmental awareness, advocate for sustainable practices, and take action to address pressing environmental issues. Whether you&apos;re passionate about protecting endangered species, reducing plastic pollution, or combating climate change, there&apos;s a place for you in our community.
 
 Through collaboration, education, and activism, we strive to create a greener, cleaner, and more sustainable world. Together, we can make a difference and ensure a brighter future for all living beings.
 
