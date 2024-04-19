@@ -21,7 +21,8 @@ const CommunityCard: React.FC<CommCardProps> = ({ imageURL, title, description, 
         <Card className="max-w-xs">
             <CardHeader>
                 <Image src={imageURL} width={600} height={400} alt="Image" className="rounded-md object-cover" />
-                <CardTitle className="pt-4 flex items-center">{title} <UserCheck className={cn("ml-2 w-6 h-6 stroke-green-600 dark:stroke-green-300 rounded bg-green-50 dark:bg-green-800 p-1", joined? '' : 'hidden')}/> </CardTitle>
+                <CardTitle className="pt-4 flex items-center">{title} 
+                <UserCheck className={cn("ml-2 w-6 h-6 stroke-green-600 dark:stroke-green-300 rounded bg-green-50 dark:bg-green-800 p-1", joined? '' : 'hidden')}/> </CardTitle>
                 <CardDescription>{description}</CardDescription>
             </CardHeader>
             <CardContent>

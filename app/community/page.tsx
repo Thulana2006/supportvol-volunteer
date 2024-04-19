@@ -7,7 +7,7 @@ import {Loader2} from 'lucide-react';
 import Navbar from '@/components/community/navbar';
 import CommunityCarousel from '@/components/community/communitiesCarousel';
 
-export default function CommunityPage() {
+export default function CommunityHomePage() {
     const { user } = UserAuth();
     const [loading, setLoading] = useState(true);
 
