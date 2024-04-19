@@ -19,8 +19,6 @@ export default function CommunityPage() {
         checkAuthentication();
     }, [user]);
 
-    console.log(user);
-
     return (
         <div className="flex min-h-screen flex-col gap-6 lg:px-24">
             {loading ? (
@@ -29,7 +27,7 @@ export default function CommunityPage() {
         <div className="flex min-h-screen flex-col gap-6 md:px-24 pt-8 ">
           <Navbar selectedItem='Community' userName={user.displayName} userEmail={user.email} userProfile={user.photoURL} selectedIcon={1}/>
           <div className='p-8'>
-            <CommunityCarousel/>
+            <CommunityCarousel uid={user.uid}/>
           </div>
           <div className=''>
               <span className="p-1 px-2 rounded text-xs bg-accent text-accent-foreground ">recent activities</span>

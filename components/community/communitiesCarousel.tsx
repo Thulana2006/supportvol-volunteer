@@ -9,10 +9,45 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { json } from "stream/consumers";
 
-export default function CommunityCarousel() {
+interface CommunityCarouselProps {
+  uid: string;
+}
+
+const CommunityCarousel: React.FC<CommunityCarouselProps> = ({ uid }) => {
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+ 
+    const userid = uid; // Replace 'your_uid_here' with your actual UID
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
+    const requestOptions = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'uid': userid,
+      },
+    };
+ 
+    try {
+      const response = await fetch('https://support-vol.as.r.appspot.com/api/community', requestOptions);
+      if (!response.ok) {
+        console.log(response);
+        throw new Error('Network response was not ok');
+      }
+      // Handle successful response
+      console.log('Request successful');
+      console.log(response);
+    } catch (error) {
+      // Handle error
+      console.error('There was an error!', error);
+    }
+  };
+
   return (
-    <Carousel className="w-full">
+    <Carousel className="w-full" onLoad={handleSubmit}>
       <CarouselContent className="-ml-1">
         {Array.from({ length: 10 }).map((_, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
@@ -36,3 +71,5 @@ export default function CommunityCarousel() {
     </Carousel>
   )
 }
+
+export default CommunityCarousel;
